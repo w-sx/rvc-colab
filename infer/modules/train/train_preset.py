@@ -1,7 +1,6 @@
 from sys import argv
 from random import shuffle
-import os
-import pathlib
+import os, pathlib, json
 
 # example:
 # python train_reset.py logs/wsx 48k 0 v2 true
