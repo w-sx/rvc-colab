@@ -57,7 +57,7 @@ class Config:
             self.noparallel,
             self.noautoopen,
             self.dml,
-        ) = ('python',0,True,True,False)
+        ) = ('python',0,True,True,True,False)
         self.instead = ""
         self.preprocess_per = 3.7
         self.x_pad, self.x_query, self.x_center, self.x_max = self.device_config()
