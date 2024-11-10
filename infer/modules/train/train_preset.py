@@ -1,15 +1,14 @@
-from sys import argv
 from random import shuffle
-import os, pathlib, json
+import sys, os, pathlib, json
 
 # example:
 # python train_reset.py logs/wsx 48k 0 v2 true
 
-exp_dir = argv[1]
-sr = argv[2]
-spk_id = argv[3]
-version = argv[4]
-if_f0 = argv[5].lower() == "true"
+exp_dir = sys.argv[1]
+sr = sys.argv[2]
+spk_id = sys.argv[3]
+version = sys.argv[4]
+if_f0 = sys.argv[5].lower() == "true"
 
 sys.path.append(os.getcwd())
 from configs.config import Config
