@@ -11,6 +11,10 @@ spk_id = argv[3]
 version = argv[4]
 if_f0 = argv[5].lower() == "true"
 
+sys.path.append(os.getcwd())
+from configs.config import Config
+config = Config()
+
 if __name__ == '__main__':
     print('create filelist')
     gt_wavs_dir = "%s/0_gt_wavs" % (exp_dir)
